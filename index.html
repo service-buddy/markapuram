@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ServiceBuddy - Local Services in Markapuram</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #000000; margin: 0; padding: 0; }
+    header { background-color: #27ae60; color: white; padding: 20px; text-align: center; }
+    h1 { margin: 0; font-size: 28px; }
+    .container { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h2 { color: #2c3e50; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; }
+    .service-button, .sub-button {
+      display: block;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #808080;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+    .service-button:hover, .sub-button:hover {
+      background-color: #1ebc59;
+    }
+    .sub-services { display: none; margin-left: 20px; }
+    .toggle { cursor: pointer; background-color: #25D366; color: white; padding: 15px; border-radius: 8px; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #27ae60;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+  <script>
+    function toggleSub(id) {
+      var sub = document.getElementById(id);
+      sub.style.display = sub.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>ServiceBuddy - Your Local Service Partner</h1>
+    <p>Markapuram | Trusted Services at Your Doorstep</p>
+  </header>
+
+  <div class="container">
+    <h2>Available Services / అందుబాటులో ఉన్న సేవలు</h2>
+    <ul>
+
+
+        <li><div class="toggle" onclick="toggleSub('food-sub')">Order Food</div></li>
+      <div class="sub-services" id="food-sub">
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20order%20Food_From_Foodnest">Food Nest</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20order%20Food_From_Abhiruchit">Abhiruchi</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20order%20Food_From_N-square">N-Square</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20order%20Food_From_Uyyala_Jampala">Uyyala Jampala</a>
+      </div>
+
+      <li><a class="service-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20Plumber%20service">Plumber / ప్లంబర్</a></li>
+
+      <li><div class="toggle" onclick="toggleSub('electrician-sub')">Electrician / ఎలక్ట్రీషియన్</div></li>
+      <div class="sub-services" id="electrician-sub">
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20repair%20Fan">Fan</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20repair%20Washing machine">Washing machine</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20repair%20AC">AC</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20repair%20Other%20Electrical%20Item">Other Electrical Item</a>
+      </div>
+
+      <li><div class="toggle" onclick="toggleSub('auto-sub')">Auto/Taxi Booking / ఆటో/టాక్సీ బుకింగ్</div></li>
+      <div class="sub-services" id="auto-sub">
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20Auto">Auto</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20Bike%20Taxi">Bike</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20Car%20Taxi">Car Taxi</a>
+      </div>
+
+      <li><a class="service-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20AC%20Repair%20%26%20Installation%20service">AC Repair & Installation / AC మరమ్మతు & ఇన్స్టాలేషన్</a></li>
+      <li><a class="service-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20House%20Painting%20service">House Painting / ఇల్లు పెయింటింగ్</a></li>
+      <li><a class="service-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20Construction%20Helpers%20service">Construction Helpers / కట్టడం సహాయకులు</a></li>
+      <li><a class="service-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20CCTV%20%2F%20Inverter%20Technician%20service">CCTV / Inverter Technician / CCTV / ఇన్వర్టర్ సాంకేతిక నిపుణుడు</a></li>
+      <li><a class="service-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20Carpenter%20service">Carpenter / ఇంటి పనుల కమ్మరి</a></li>
+      <li><a class="service-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20House%20Cleaning%20service">House Cleaning / ఇల్లు శుభ్రపరచడం</a></li>
+
+      <li><div class="toggle" onclick="toggleSub('event-sub')">Event Management / ఈవెంట్ మేనేజ్‌మెంట్</div></li>
+      <div class="sub-services" id="event-sub">
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20Stage%20Decoration">Stage Decoration</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20Photography">Photography</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20Catering%20Service">Catering Service</a>
+        <a class="sub-button" href="https://wa.me/917075519555?text=I%20want%20Ornaments%20Rental">Ornaments Rental</a>
+      </div>
+
+      <li><a class="service-button" href="https://wa.me/917075519555?text=I%20want%20to%20book%20a%20different%20service">Other / ఇతర</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 ServiceBuddy | Powered by Markapuram Muchatlu
+  </footer>
+</body>
+</html>S
